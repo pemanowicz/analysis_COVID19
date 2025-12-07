@@ -1,16 +1,33 @@
 # COVID-19 Data Analysis Project
 
-This project provides a complete end-to-end workflow for COVID-19 data processing, analysis, and reporting.
-It integrates multiple datasets, loads them into a PostgreSQL database, performs analytical transformations using SQL, and generates automated visual reports using Python.
+This project provides a complete end-to-end workflow for COVID-19 data
+processing, analysis, and reporting.\
+It integrates multiple datasets, loads them into a PostgreSQL database,
+performs analytical transformations using SQL, and generates automated
+visual reports using Python.
 
-The goal of this project is to integrate COVID-19 data from multiple public sources (including Kaggle and Worldometer) into a unified analytical environment.
-By combining SQL-based data engineering with Python-based analytics, the project delivers a reproducible pipeline for cleaning, transforming, analyzing, and visualizing pandemic-related data.
+The goal of this project is to integrate COVID-19 data from multiple
+public sources (including **Kaggle** and **Worldometer**) into a unified
+analytical environment.\
+By combining SQL-based data engineering with Python-based analytics, the
+project delivers a reproducible pipeline for cleaning, transforming,
+analyzing, and visualizing pandemic-related data.
+
+# Live Interactive Dashboard
+
+All interactive HTML visualizations (Plotly, choropleths, bar charts,
+time series) are available here:
+ **https://pemanowicz.github.io/analysis_COVID19/**
+
+The dashboard is automatically refreshed whenever new reports are added
+to the project.
 
 ## Project Structure
 - `data_raw/` - Raw COVID-19 datasets (CSV)
-- `sql/` - SQL scripts for database structure, views, and reports
+- `sql/` - SQL scripts for schema, imports, analytical queries, and ETL
 - `notebooks/` - Python notebooks for analysis and visualization
-- `reports/` - Generated charts and analytical outputs
+- `reports/` -  Generated analytical tables (CSV)
+- `docs/` - Interactive HTML reports hosted wuth GitHub Pages
 - `tests/` - Data quality tests
 - `requirements.txt/` - Python dependencies
 - `README.md/` - Project documentation
@@ -60,6 +77,14 @@ After running the pipeline, you will find analytical outputs in the
 -   Top 10 countries by confirmed cases\
 -   WHO regional summaries\
 -   World map visualization (HTML)
+
+  ### Interactive HTML visualizations (hosted in `docs/`):
+
+-   Global COVID-19 map\
+-   Weekly growth trend\
+-   Positivity rate by country\
+-   Top 10 countries bar chart\
+-    WHO region analysis
 
 ## Data Quality Tests
 
